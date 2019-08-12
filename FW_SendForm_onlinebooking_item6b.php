@@ -33,7 +33,7 @@ $errorStrings = array(
 	1 => 'No form submitted',
 	2 => 'Invalid E-Mail address',
 	3 => 'E-Mail could not be delivered',
-	4 => 'sendForm36537', // No real error message for this
+	4 => 'sendForm65266', // No real error message for this
 );
 
 // FUNCTIONS
@@ -86,8 +86,8 @@ $safeMode = ($safeMode == 'On' || $safeMode == true);
 $recipientId = 0;
 
 // Before we go anywhere, was the form submitted by a human?
-if (($input_type == INPUT_POST && !empty($_POST['sendForm36537']) ||
-	($input_type == INPUT_GET && !empty($_GET['sendForm36537']))))
+if (($input_type == INPUT_POST && !empty($_POST['sendForm65266']) ||
+	($input_type == INPUT_GET && !empty($_GET['sendForm65266']))))
 {
 	// Probably not
 	appendError(4);
