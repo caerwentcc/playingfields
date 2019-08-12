@@ -55,7 +55,7 @@ strong { font-weight:bold }
 .style6 { color:#fff }
 .style25 { font-family:Verdana,Arial,Helvetica,sans-serif }
 .style33 { text-decoration:underline; font-size:18px }
-#PageDiv { position:relative; height:1000px; max-width:960px; min-height:100%; margin:auto }
+#PageDiv { position:relative; max-width:960px; min-height:100%; margin:auto }
 #item7 { position:absolute; left:10px; top:232px; width:950px; height:499px; z-index:1; overflow:visible }
 #item2 { position:absolute; left:0px; top:-8px; width:558px; height:270px; z-index:1; padding:10px; background-color:#fff; overflow:visible }
 #item3 { position:absolute; left:363px; top:282px; width:542px; height:190px; z-index:2; padding:10px; background-color:#fff; overflow:hidden }
@@ -63,10 +63,10 @@ strong { font-weight:bold }
 #P1050199 { position:absolute; left:612px; top:35px; width:304px; height:204px; z-index:4 }
 #header.f-ms { position:absolute; left:3px; top:6px; width:950px; height:207px; z-index:2; background-color:#ccc; border:solid #fff 2px; overflow:visible }
 #title.f-ms { position:absolute; left:45px; top:45px; width:594px; height:48px; z-index:1; overflow:visible }
-#navigation { position:absolute; left:0px; top:160px; width:900px; height:29px; z-index:2; overflow:visible }
-#facebook.f-ms { position:absolute; left:320px; top:101px; width:35px; height:29px; z-index:3 }
-#IMG0284.f-ms { position:absolute; left:674px; top:0px; width:248px; height:150px; z-index:4 }
-#m7.f-ms { position:absolute; left:49px; top:99px; width:254px; height:33px; z-index:5 }
+#facebook.f-ms { position:absolute; left:320px; top:101px; width:35px; height:29px; z-index:2 }
+#IMG0284.f-ms { position:absolute; left:674px; top:0px; width:248px; height:150px; z-index:3 }
+#m7.f-ms { position:absolute; left:49px; top:99px; width:254px; height:33px; z-index:4 }
+#navigation.f-ms { position:absolute; left:25px; top:160px; width:900px; height:29px; z-index:5; overflow:visible }
 #m21.f-ms { position:absolute; left:412px; top:118px; width:233px; height:31px; z-index:3 }
 #footer { position:absolute; left:0px; top:1000px; width:950px; height:165px; z-index:4; overflow:visible }
 #copyright1 { position:absolute; left:25px; top:137px; width:606px; height:20px; z-index:1; background-color:#393938; overflow:visible }
@@ -90,7 +90,7 @@ strong { font-weight:bold }
 #fwNav1 .sub * .sub { top:-0; }
 #fwNav1 .fwNavItem .sub .fwNavItem { display:block; margin:0; padding:0; left:0; width:7em;border-bottom:1px inset #000000; border-left:0; border-right:0; border-top:1px inset #000000; }
 #fwNav1 * * * .sub { left:100%; top:0}
-#fwNav1 .fwNavItem .sub .fwNavItem a { display:block;color:#0000FF; text-decoration:none; background: url() repeat; background-position:top left; margin:0;padding:3px 10px 3px 10px; height:1%; }
+#fwNav1 .fwNavItem .sub .fwNavItem a { display:block;color:#0000FF; text-decoration:none; background:url(Resources/transparent.gif) repeat; margin:0;padding:3px 10px 3px 10px; height:1%; }
 #fwNav1 .fwNavItem .sub .fwFirstChild { border-top:0; }
 #fwNav1 .fwNavItem .sub .fwLastChild { border-bottom:0; }
 #fwNav1 .fwNavItem .sub .fwNavItem:hover > span a, #fwNav1 .fwNavItem .sub .fwNavItem:hover > a { color:#0000FF; text-decoration:none; background:#FFFFFF; }
@@ -110,6 +110,7 @@ strong { font-weight:bold }
 <!--[if lt IE 7]>
 <link rel=stylesheet type="text/css" href="css/ie6.css">
 <style type="text/css">
+#PageDiv { height:100% }
 #m22.f-ms { height:48px }
 #m23.f-ms { height:20px }
 #m24.f-ms { height:23px }
@@ -189,7 +190,13 @@ window.onload = function(){ FWStartList(); };
 	</div>
 	<div id="header" class="f-ms"><div id="title" class="f-ms"><p class="f-fp f-lp"><span class="siteTitle"><span class="style51">Caerwent Playing Fields Association</span></span></p>
 		</div>
-		<div id="navigation" style="height:auto; overflow:visible"><div class="fwNavContainer1">
+		<div id="facebook" class="f-ms"><a href="http://www.facebook.com/caerwent"><img src="Resources/facebook.jpeg" border=0 width=35 height=29 alt="facebook" style="float:left"></a>
+		</div>
+		<div id="IMG0284" class="f-ms"><img src="Resources/img0284.jpeg" border=0 width=256 height=158 alt="IMG0284" usemap="#map1" style="float:left">
+		</div>
+		<div id="m7" class="f-ms"><img src="Resources/m7j.gif" border=0 width=162 height=12 alt="Visit us on Facebook" style="position:relative; left:46px; top:10px; float:left">
+		</div>
+		<div id="navigation" class="f-ms" style="height:auto; overflow:visible"><div class="fwNavContainer1">
 				<ul class="f-fp f-lp" id="fwNav1">
 					<li class="fwFirstChild fwNavItem"><a href="#" class="fwCurrent"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style11" style="text-decoration:none"><span class="style19" style="text-decoration:none">HOME</span></span></span></span></a></li>
 					<li class="fwNavItem"><a href="aboutus.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style19" style="text-decoration:none">ABOUT US</span></span></span></a></li>
@@ -199,22 +206,15 @@ window.onload = function(){ FWStartList(); };
 							<li class="fwNavItem"><a href="feeschargesv2.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style70" style="text-decoration:none">FEES &amp; CHARGES</span></span></span></a></li>
 							<li class="fwNavItem"><a href="downloads.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style70" style="text-decoration:none">DOWNLOADS</span></span></span></a></li>
 							<li class="fwNavItem"><a href="eventsthehall.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style70" style="text-decoration:none">EVENTS @ THE HALL</span></span></span></a></li>
-							<li class="fwLastChild fwNavItem"><a href="paymentcopyv2.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style70" style="text-decoration:none">PAYMENTS</span></span></span></a></li>
+							<li class="fwLastChild fwNavItem"><a href="payments.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style70" style="text-decoration:none">PAYMENTS</span></span></span></a></li>
 						</ul>
 					</li>
 					<li class="fwNavItem"><a href="communitynewslet.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style19" style="text-decoration:none">COMMUNITY NEWSLETTER</span></span></span></a></li>
 					<li class="fwNavItem"><a href="carbootsales.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style19" style="text-decoration:none">CAR BOOT SALES</span></span></span></a></li>
 					<li class="fwNavItem"><a href="villageshow.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style19" style="text-decoration:none">VILLAGE SHOW</span></span></span></a></li>
-					<li class="fwNavItem"><a href="http://caerwentcc.com/villagepf/gb/gbook.php"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style19" style="text-decoration:none">GUEST BOOK</span></span></span></a></li>
 					<li class="fwLastChild fwNavItem"><a href="contactus.html"><span class="nav" style="text-decoration:none"><span class="siteSubtitleHighlight" style="text-decoration:none"><span class="style19" style="text-decoration:none">CONTACT US</span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div id="facebook" class="f-ms"><a href="http://www.facebook.com/caerwent"><img src="Resources/facebook.jpeg" border=0 width=35 height=29 alt="facebook" style="float:left"></a>
-		</div>
-		<div id="IMG0284" class="f-ms"><img src="Resources/img0284.jpeg" border=0 width=256 height=158 alt="IMG0284" usemap="#map1" style="float:left">
-		</div>
-		<div id="m7" class="f-ms"><img src="Resources/m7j.gif" border=0 width=162 height=12 alt="Visit us on Facebook" style="position:relative; left:46px; top:10px; float:left">
 		</div>
 	</div>
 	<div id="m21" class="f-ms"><script type="text/javascript">//<![CDATA[
