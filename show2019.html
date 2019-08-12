@@ -54,7 +54,6 @@ strong { font-weight:bold }
 .style6 { color:#fff }
 .style14 { font-family:Verdana,Arial,Helvetica,sans-serif; font-size:18px }
 .style11 { color:#00f; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:18px }
-.style53 { color:#000; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:18px }
 #PageDiv { position:relative; height:1200px; max-width:960px; min-height:100%; margin:auto }
 #item3 { position:absolute; left:30px; top:234px; width:900px; height:414px; z-index:1; overflow:visible }
 #header.f-ms { position:absolute; left:3px; top:6px; width:950px; height:207px; z-index:2; background-color:#ccc; border:solid #fff 2px; overflow:visible }
@@ -72,7 +71,9 @@ strong { font-weight:bold }
 #m24.f-ms { position:absolute; left:178px; top:93px; width:341px; min-height:23px; z-index:5; overflow:visible }
 #chat.f-ms { position:absolute; left:125px; top:83px; width:40px; height:40px; z-index:6 }
 #contact.f-ms { position:absolute; left:628px; top:87px; width:38px; height:36px; z-index:7 }
-#item1 { position:absolute; left:43px; top:667px; width:868px; height:247px; z-index:5 }
+#item1 { position:absolute; left:43px; top:667px; width:868px; height:287px; z-index:5 }
+#item2 { position:relative; width:141px; min-height:31px; z-index:0; overflow:visible }
+#item5 { position:relative }
 #fwNav1 { float:left;  padding:0; margin:0; list-style:none; }
 #fwNav1 .fwNavItem { width:auto;  float:left;margin:0; padding:0; border-right:1px inset #000000; border-top:0; border-bottom:0; border-left:1px inset #000000; position:relative; }
 #fwNav1 .fwNavItem a { display:block;color:#0000FF; text-decoration:none; background:#FFFF00; margin:0;padding:3px 10px 3px 10px; height:1%; }
@@ -109,6 +110,7 @@ strong { font-weight:bold }
 #m22.f-ms { height:48px }
 #m23.f-ms { height:20px }
 #m24.f-ms { height:23px }
+#item2 { height:31px }
 </style>
 <![endif]-->
 <script type="text/javascript">//<![CDATA[
@@ -243,9 +245,11 @@ window.onload = function(){ FWStartList(); };
 	<div id="item1">
 		<table border=5 cellspacing=5 cellpadding=0>
 			<tr>
-				<td width=421 height=40 valign=top><p class="center f-fp f-lp"><span class="style14">Fruit, Veg &amp; Craft Show Schedule 2019</span></p>
+				<td width=421 height=80 valign=top><p class="center f-fp f-lp"><span class="style14">Fruit, Veg &amp; Craft Show Schedule 2019</span></p>
 				</td>
-				<td width=422 valign=top><p class="center f-fp f-lp"><span class="style11"><a href="../../GitHub/playingfields/Resources/Show%20schedule%202019%20v1.pdf">  </a></span><span class="style53"><a href="../../GitHub/playingfields/Resources/Show%20schedule%202019%20v1.pdf">Download Here</a></span></p>
+				<td width=422 valign=top><p class="center f-fp"><span class="style11"><a href="../../GitHub/playingfields/Resources/Show%20schedule%202019%20v1.pdf"> </a></span></p>
+				<div id="item2" class="f-x2"><p class="f-fp f-lp"><span class="style25">Download <span id="item5"><a href="Resources/Show%20schedule%202019%20v1.pdf">Download Here</a></span>here</span></p>
+				</div>
 				</td>
 			</tr>
 			<tr>
