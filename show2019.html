@@ -71,9 +71,13 @@ strong { font-weight:bold }
 #m24.f-ms { position:absolute; left:178px; top:93px; width:341px; min-height:23px; z-index:5; overflow:visible }
 #chat.f-ms { position:absolute; left:125px; top:83px; width:40px; height:40px; z-index:6 }
 #contact.f-ms { position:absolute; left:628px; top:87px; width:38px; height:36px; z-index:7 }
-#item1 { position:absolute; left:43px; top:667px; width:868px; height:267px; z-index:5 }
-#item2 { position:absolute; left:579px; top:678px; width:217px; min-height:40px; z-index:6; overflow:visible }
-#item5 { position:relative; padding:7px; vertical-align:top }
+#item1 { position:absolute; left:43px; top:667px; width:868px; height:224px; z-index:5 }
+#item6 { position:relative; width:215px; min-height:38px; z-index:0; margin-left:auto; margin-right:auto; overflow:hidden; font-size:1px }
+#item8 { position:relative; width:215px; min-height:36px; z-index:0; margin-left:auto; margin-right:auto; overflow:hidden; font-size:1px }
+#item2 { position:absolute; left:579px; top:678px; width:217px; min-height:40px; z-index:6; font-size:1px }
+#item7 { position:absolute; left:603px; top:748px; width:177px; height:33px; z-index:7 }
+#item10 { position:absolute; left:606px; top:798px; width:175px; height:31px; z-index:8 }
+#item5 { position:absolute; left:606px; top:684px; width:173px; height:33px; z-index:9 }
 #fwNav1 { float:left;  padding:0; margin:0; list-style:none; }
 #fwNav1 .fwNavItem { width:auto;  float:left;margin:0; padding:0; border-right:1px inset #000000; border-top:0; border-bottom:0; border-left:1px inset #000000; position:relative; }
 #fwNav1 .fwNavItem a { display:block;color:#0000FF; text-decoration:none; background:#FFFF00; margin:0;padding:3px 10px 3px 10px; height:1%; }
@@ -111,6 +115,8 @@ strong { font-weight:bold }
 #m22.f-ms { height:48px }
 #m23.f-ms { height:20px }
 #m24.f-ms { height:23px }
+#item6 { height:38px }
+#item8 { height:36px }
 #item2 { height:40px }
 </style>
 <![endif]-->
@@ -254,18 +260,14 @@ window.onload = function(){ FWStartList(); };
 			<tr>
 				<td width=421 height=46 valign=top><p class="center f-fp f-lp"><span class="style14">List of Musical Acts &amp; Demonstrations &amp; Exhibitions</span></p>
 				</td>
-				<td width=422 valign=top><p class="center f-fp f-lp"><span class="style14">Coming Shortly</span></p>
+				<td width=422 valign=top><div id="item6" class="f-x2"></div>
 				</td>
 			</tr>
 			<tr>
-				<td width=421 height=40 valign=top><p class="center f-fp f-lp"><span class="style14">List of Traders</span></p>
+				<td width=421 height=42 valign=top><p class="center f-fp f-lp"><span class="style14">List of Traders</span></p>
 				</td>
-				<td width=422 valign=top><p class="center f-fp f-lp"><span class="style14">Coming Shortly</span></p>
+				<td width=422 valign=top><div id="item8" class="f-x2"></div>
 				</td>
-			</tr>
-			<tr>
-				<td width=421 height=40 valign=top><img src="Resources/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
-				<td width=422 valign=top><img src="Resources/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
 			</tr>
 			<tr>
 				<td width=421 height=41 valign=top><p class="center f-fp f-lp"><span class="style14">How to find us</span></p>
@@ -275,8 +277,10 @@ window.onload = function(){ FWStartList(); };
 			</tr>
 		</table>
 	</div>
-	<div id="item2" class="f-x2"><p class="f-fp f-lp"><span class="style14"><span id="item5"><a href="Resources/Show%20schedule%202019%20v1.pdf"> DOWNLOAD NOW</a></span></span></p>
-	</div>
+	<div id="item2" class="f-x2"></div>
+	<div id="item7"><a href="Resources/Stage-2019.pdf">DOWNLOAD NOW</a></div>
+	<div id="item10"><a href="Resources/Stalls%20List.pdf">DOWNLOAD NOW</a></div>
+	<div id="item5"><a href="Resources/Show%20schedule%202019%20v1.pdf">DOWNLOAD NOW</a></div>
 	<map name="map1">
 	<area alt="IMG0284" coords="1,1,249,151" href="index.html">
 	</map>
